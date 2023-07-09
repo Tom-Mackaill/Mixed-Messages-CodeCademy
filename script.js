@@ -26,15 +26,33 @@ const saturnFacts = [
     'You cannot stand on Satturn'
 ];
 
-const generateRandomNumber = Math.floor(Math.random() * 17);
+const generateRandomNumber = Math.floor(Math.random() * 13);
 
 const randomMessage = () => {
     if (generateRandomNumber === 0){
-        return planets[0]
+        return planets[0] + marsFacts[0]
     } else if (generateRandomNumber === 1){
-        return planets[1]
+        return planets[0] + marsFacts[1]
     } else if (generateRandomNumber === 2){
-        return planets[2]
+        return planets[0] + marsFacts[2]
+    } else if (generateRandomNumber === 3){
+        return planets[1] + jupiterFacts[0]
+    } else if (generateRandomNumber === 4){
+        return planets[1] + jupiterFacts[1]
+    } else if (generateRandomNumber === 5){
+        return planets[1] + jupiterFacts[2]
+    } else if (generateRandomNumber === 6){
+        return planets[2] + earthFacts[0]
+    } else if (generateRandomNumber === 7){
+        return planets[2] + earthFacts[1]
+    } else if (generateRandomNumber === 8){
+        return planets[2] + earthFacts[2]
+    } else if (generateRandomNumber === 9){
+        return planets[3] + saturnFacts[0]
+    } else if (generateRandomNumber === 10){
+        return planets[3] + saturnFacts[1]
+    } else if (generateRandomNumber === 11){
+        return planets[3] + saturnFacts[2]
     }
 };
 
